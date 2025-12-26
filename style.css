@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;  
+    overflow-x: hidden;
+
+}
+html{
+    font-size: 16px;
+}
+#logo{
+    font-size: clamp(2.6rem,5vw,4rem);
+    font-family: 'Inter';
+    font-weight: 300;
+    margin-left: 20px;
+}
+ul{
+    display: flex;
+    gap:50px;
+}
+li{
+    font-size: 3rem;
+    font-family: 'Inter';
+    list-style: none;
+    font-weight: 300;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.container_first{
+    display: flex;
+    gap:5rem;
+}
+nav{
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items:center;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+#cta{
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: 'Poppins';
+    background-color:rgb(0, 55, 255);
+    color: white;
+    border-radius:40px;
+    padding:5px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+#cta:hover{
+    background-color:rgb(0, 55, 220);
+    transform: scale(1.1);
+}
+#heading{
+    font-size: clamp(2.3rem, 5vw, 3.5rem);
+    font-family: 'ADLaM Display';
+    text-align: center;
+    margin-top:5%;
+    font-weight: 300;
+    width:90vw;
+    max-width: 60rem;
+    justify-self: center;
+}
+#sub_heading{
+    font-family: 'Inter';
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1%;
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+}
+.butt_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap:3rem;
+}
+.butt{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size:clamp(1rem, 3vw, 1.8rem);
+    padding:clamp(0.1rem,2vw,0.8rem);
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+.butt:hover{
+    transform: scale(1.1);
+}
+#diff_butt{
+    background-color: rgb(43, 0, 255);
+    color:white;
+}
+#diff_butt:hover{
+    background-color: rgb(43, 0, 220);;
+}
+article{
+    text-align: center;
+    margin-top: 5%;
+}
+article img{
+    height:700px;
+    width:1100px;
+}
+.about_section{
+    text-align: center;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about{
+    font-family: 'Poppins';
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-weight: 400;
+}
+#about_info{
+    font-family: 'Poppins';
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    font-weight: 300;
+    width:40vw;
+}
+#heading_card{
+    font-family: 'DM Sans';
+    font-size: clamp(3rem,5vw,4rem);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10%;
+}
+.card_container{
+    display: grid;
+    grid-template-rows: repeat(3, 550px);
+    grid-template-columns: repeat(2,  500px);
+    justify-self:center;
+    margin-top: 5%;
+    gap:150px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.img_card{
+    border-radius: 25px;
+    align-self: center;
+}
+.text_card{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 3%;
+}
+.card_butt{
+    width:170px;
+    height: 60px;
+    margin-top: 10%;
+    background-color: aqua;
+    border-radius: 10px;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+#partner{
+    font-size: clamp(3rem,5vw,4rem);
+    font-family: 'DM Sans';
+    font-weight: 300;
+    justify-self: center;
+    margin-top: 10%;
+}
+.logo_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:150px;
+    justify-content: center;
+    margin-top: 5%;
+}
+.section_1{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    gap: 2rem;  
+    width: 100%;
+    justify-content: space-between;  
+}
+.s{
+    flex: 1;
+    min-width: 100px;  
+}
+.h1_s{
+    font-size: clamp(2.1rem,5vw,3rem);
+    font-family: 'DM Sans';
+    font-weight: 500;
+    text-align: center;
+}
+.h2_s{
+    font-size: clamp(1.5rem,5vw,2rem);
+    font-family: 'Inter';
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color:rgb(0, 0, 0);
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.t{
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 3rem;
+    font-weight: 500;
+}
+.g{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 400;
+}
+#img9{
+    width:clamp(300px,50vw,700px);
+}
+#img10{
+    width:clamp(300px,50vw,700px);
+}
+#img11{
+    width:clamp(300px,50vw,700px);
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.new{
+    display: none;
+}
+@media (max-width:1145px){
+    .card_container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    article img{
+        height:500px;
+        width:95%;
+    }
+    ul{
+        align-items: flex-end;
+        gap:clamp(1.2rem,5vw,2rem);
+    }
+    .container_first{
+        gap:clamp(2rem,3vw,5rem);
+    }
+    ul{
+        display: none;
+    }
+    .menu::after{
+        content: '☰';
+        font-size: 3rem;
+        cursor:pointer;
+    }
+   #cta{
+     display: none;
+   } 
+}
+@media (max-width:940px){
+    .section_1{
+        flex-direction: column;
+    }
+    #img9,#img10,#img11{
+        width: 100%;
+    }
+    .t{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .g{
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    #about_info{
+    font-family: 'Poppins';
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    font-weight: 300;
+    width:100vw;
+    }
+}
+@media (max-width:520px) {
+    .card{
+        width:90vw;
+    }
+    .img_card{
+        width:85vw;
+    }
+    .t{
+        font-size: clamp(1.5rem,5vw,3rem);
+    }
+    .g{
+        font-size: clamp(1rem,4vw,2rem);
+    }
+    .footer{
+        height: 300px;
+    }
+}
